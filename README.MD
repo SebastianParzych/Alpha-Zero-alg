@@ -60,12 +60,12 @@ Są możliwe do wykonania dwie akcje:
 
 - Dla gry kółko i krzyżuk:           
 ```
-    python main.py --action=train --game=ttt --player-mark=x
+    python main.py --action=play --game=ttt --player-mark=x
 ```
 Przy wykonywaniu ruchu użytkownik wpisuje położenie x,y swojego znaku np. `0,0`
 - Dla gry connect4:  
 ```
-    python main.py --action=train --game=connect4 --player-mark=o
+    python main.py --action=play --game=connect4 --player-mark=o
 ```
 Przy wykonywaniu ruchu użytkownik wpisuje indeks kolumny, do której ma być dołożony znak znak np. `0`
 <br>
@@ -100,3 +100,49 @@ Epoch 1/12
 96/96 [==============================] - 3s 4ms/step - loss: 0.5897 - policy_head_loss: 0.8901 - value_head_loss: 0.2092 - policy_head_accuracy: 0.7611 - value_head_accuracy: 0.7070
 ```
 ## Przykładowa Gra
+```
+Game start
+--- Next Player: O, Value = 0.169388
+ 15  15  62  23 851  15  15
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+--- Next Player: X
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   O   .   .
+--- Take your move: 1
+--- Next Player: O, Value = 0.551524
+289 554  31  46  23  39  15
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   X   .   .   O   .   .
+--- Next Player: X
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   .   .   .   .   .   .
+ .   O   .   .   .   .   .
+ .   X   .   .   O   .   .
+--- Take your move:
+```
+
+
+# Przkładowy wykresy z uczenia:
+
+## Kółko i krzyżyk 
+<br></br>
+    ![Getting Started](./train_data/tictactoe__13.png)
+## Connect4
+<br></br>
+ ![Getting Started](train_data\connect4_4.png)
+<br><br>
