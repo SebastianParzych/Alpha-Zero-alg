@@ -93,10 +93,12 @@ def is_Human(mark):
         raise ValueError("Incorrect player!")
 
 def run_pve(args):
+    
     if args.game == "ttt":
+        
         from tictactoe.tictactoe import TicTacToe as game
-
     else:
+        
         from connect4.connect4 import Connect4 as game
         
         
@@ -120,7 +122,7 @@ def run_pve(args):
     else:
         p2_hmuman= False
     p2 = None if p2_hmuman else model
-    print(p1,p2)
+
     playAgain = True
     while playAgain:
         print("****************************************")
