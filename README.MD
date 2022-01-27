@@ -144,5 +144,5 @@ Game start
     ![Getting Started](./train_data/tictactoe__13.png)
 ## Connect4
 <br></br>
- ![Getting Started](train_data\connect4_4.png)
+![image](https://user-images.githubusercontent.com/76798626/151353060-58cc3a18-088f-4ca8-b703-434b71e7c537.png)
 <br><br>
